@@ -22,8 +22,8 @@ while True:
                   h,w,c=img.shape 
                   cx,cy=int(lm.x*w),int(lm.y*h)
                   print(id,cx,cy)
-                  if id==0:
-                      cv2.circle(img,(cx,cy),25,(255,0,255),cv2.FILLED)
+                   # if id==0:
+                   #     cv2.circle(img,(cx,cy),25,(255,0,255),cv2.FILLED)
             # to see the handlandmarks and hand connections
         mpDraw.draw_landmarks(img,handLms,mpHands.HAND_CONNECTIONS)
             
@@ -35,7 +35,7 @@ while True:
     cv2.waitKey(1)
     # the 'q' button is set as the
     # quitting button you may use any
-    # desired button of your choice
+    # desired button of your choiceq
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 # After the loop release the cap object
