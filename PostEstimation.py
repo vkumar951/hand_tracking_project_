@@ -6,7 +6,7 @@ mpDraw=mp.solutions.drawing_utils
 mpPose=mp.solutions.pose
 pose=mpPose.Pose()
 cv2.namedWindow("output", cv2.WINDOW_NORMAL) 
-cap=cv2.VideoCapture('PoseVideos/video1.mp4')
+cap=cv2.VideoCapture('PoseVideos/video2.mp4')
 pTime=0
 while(cap.isOpened()):
     while True:
